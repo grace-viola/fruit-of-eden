@@ -137,6 +137,8 @@
 
         <p class="eyebrow">
             SINFULLY GOOD
+            <span class="eyebrow-line"></span>
+        <img src="assets/icons/sparkle.png" alt="" class="sparkle sparkle-eyebrow">
         </p>
 
         <h1>
@@ -158,8 +160,6 @@
 
 
 </section>
-
-
 
 <!-- =====================================================
      BRAND INTRODUCTION
@@ -193,16 +193,15 @@
             <!-- FEATURE 01 -->
             <div class="feature">
 
-                <span class="feature-number">01</span>
-
                 <div class="feature-icon">
                     <img src="assets/globe icon.png" alt="Global Cuisine">
                 </div>
 
-                <h3>Global Cuisine</h3>
+                <h3>GLOBAL CUISINE</h3>
 
                 <p>
-                    Menu curated from all over the globe, offering an
+                    Menu curated from all over 
+                    the globe, offering an
                     unrivaled array of choices.
                 </p>
 
@@ -212,17 +211,16 @@
             <!-- FEATURE 02 -->
             <div class="feature">
 
-                <span class="feature-number">02</span>
-
                 <div class="feature-icon">
                     <img src="assets/heart icon.png" alt="Naturally Fresh">
                 </div>
 
-                <h3>Naturally Fresh</h3>
+                <h3>NATURALLY FRESH</h3>
 
                 <p>
-                    Ingredients are sourced from high quality farms,
-                    straight to your plate.
+                    Ingredients are sourced from 
+                    high quality farms, straight 
+                    to your plate.
                 </p>
 
             </div>
@@ -231,16 +229,15 @@
             <!-- FEATURE 03 -->
             <div class="feature">
 
-                <span class="feature-number">03</span>
-
                 <div class="feature-icon">
                     <img src="assets/dine icon.png" alt="Fine Dining">
                 </div>
 
-                <h3>Fine Dining</h3>
+                <h3>FINE DINING</h3>
 
                 <p>
-                    Elevated fine dining experience, especially
+                    Elevated fine dining 
+                    experience, especially
                     designed for sophistication.
                 </p>
 
@@ -250,17 +247,16 @@
             <!-- FEATURE 04 -->
             <div class="feature">
 
-                <span class="feature-number">04</span>
-
                 <div class="feature-icon">
                     <img src="assets/exotic icon.png" alt="Exotic Menu">
                 </div>
 
-                <h3>Exotic Menu</h3>
+                <h3>EXOTIC MENU</h3>
 
                 <p>
-                    Unique and unfamiliar but undeniably delicious
-                    dishes for adventurous palates.
+                    Unique and unfamiliar but 
+                    undeniably delicious dishes 
+                    for adventurous palates.
                 </p>
 
             </div>
@@ -298,7 +294,7 @@
     <div class="browsemenu-content">
 
         <p class="eyebrow">
-            YOUR TABLE AWAITS
+            OUR MENU
         </p>
 
         <h2>

@@ -137,80 +137,6 @@ h2 {
 
 }
 
-
-/* =====================================================
-   PLACEHOLDER IMAGES
-===================================================== */
-
-.image-placeholder {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    position: relative;
-
-    overflow: hidden;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--burgundy),
-            var(--terracotta)
-        );
-
-    color: var(--gold);
-
-    text-align: center;
-
-}
-
-
-.image-placeholder::before {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 20px;
-
-    border: 1px solid rgba(221, 193, 143, 0.35);
-
-}
-
-
-.image-placeholder span {
-
-    position: relative;
-
-    z-index: 2;
-
-    font-size: 11px;
-
-    font-weight: bold;
-
-    letter-spacing: 3px;
-
-}
-
-
-.image-placeholder small {
-
-    position: absolute;
-
-    z-index: 2;
-
-    margin-top: 50px;
-
-    color: var(--cream);
-
-    font-size: 10px;
-
-}
-
-
 /* =====================================================
    NAVIGATION
 ===================================================== */
@@ -568,7 +494,7 @@ h2 {
 
     color: var(--gold);
 
-    font-size: 14px;
+    font-size: 15px;
 
     font-weight: 600;
 
@@ -650,7 +576,7 @@ h2 {
 
     font-weight: bold;
 
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 
     text-transform: uppercase;
 
@@ -678,30 +604,13 @@ h2 {
     margin: 0 auto;
 }
 
-
-/* =====================================================
-   STAR PATTERN ABOVE INTRO HEADING
-===================================================== */
-
 .intro-star-pattern {
-    width: 100%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 0 auto 25px;
+    width: 300px;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
-
-.intro-star-pattern img {
-    display: block;
-
-    width: 230px;
-    height: auto;
-
-    object-fit: contain;
-}
-
 
 /* =====================================================
    WELCOME TO EDEN
@@ -766,23 +675,6 @@ h2 {
     text-align: center;
 }
 
-
-/* =====================================================
-   FEATURE NUMBER
-===================================================== */
-
-.feature-number {
-    display: block;
-
-    margin-bottom: 15px;
-
-    color: var(--gold);
-
-    font-size: 9px;
-
-    letter-spacing: 4px;
-}
-
 /* =====================================================
    FEATURE ICON
 ===================================================== */
@@ -827,9 +719,9 @@ h2 {
 
     color: var(--dark-burgundy);
 
-    font-family: "Playfair Display", serif;
+    font-family: "Verdana", sans;
 
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
 
     line-height: 1.1;
@@ -840,7 +732,7 @@ h2 {
    FEATURE DESCRIPTION
 ===================================================== */
 
-.feature p {
+.feature-description {
     max-width: 280px;
 
     margin: 0 auto;
@@ -929,6 +821,11 @@ h2 {
     justify-content: center;
 
     padding: 10%;
+
+    box-sizing: border-box;
+
+    /* Text stays on the right */
+    text-align: right;
 }
 
 
@@ -972,7 +869,13 @@ h2 {
 ===================================================== */
 
 .browsemenu-content .eyebrow {
-    margin-bottom: 18px;
+    width: 100%;
+
+    margin: 0 0 18px;
+
+    text-align: right;
+
+    font-size: 15px;
 }
 
 
@@ -981,6 +884,8 @@ h2 {
 ===================================================== */
 
 .browsemenu-content h2 {
+    width: 100%;
+
     margin: 0 0 30px;
 
     font-family: "Playfair Display", serif;
@@ -990,6 +895,8 @@ h2 {
     font-weight: 400;
 
     line-height: 0.95;
+
+    text-align: right;
 }
 
 
@@ -999,6 +906,8 @@ h2 {
     color: var(--gold);
 
     font-style: italic;
+
+    text-align: right;
 }
 
 
@@ -1007,61 +916,56 @@ h2 {
 ===================================================== */
 
 .browsemenu-content > p:not(.eyebrow) {
+
     max-width: 450px;
 
-    margin: 0 0 35px;
+    margin: 0 0 35px auto;
 
     color: #eadfd2;
 
-    font-size: 14px;
+    font-size: 17px;
 
     line-height: 1.9;
+
+    text-align: right;
 }
 
-
 /* =====================================================
-   BROWSE MENU BUTTON
+   BROWSE MENU BUTTON — right-aligned, valid display
 ===================================================== */
 
 .browsemenu-button {
-    display: inline-flex;
-
+    display: inline-flex;      /* was the invalid "flex-end" */
     align-items: center;
     justify-content: center;
 
     width: fit-content;
-
     min-width: 160px;
     height: 46px;
 
-    padding: 0 28px;
+    margin-left: auto;         /* pushes it to the right edge */
+    margin-right: 0;           /* removed — was centering it */
 
+    padding: 13px 26px;
     box-sizing: border-box;
 
     border: 1px solid var(--gold);
-
     color: var(--cream);
+    background: transparent;
 
     text-decoration: none;
-
-    font-size: 10px;
-
+    font-size: 20px;
     font-weight: bold;
-
-    letter-spacing: 2px;
-
+    letter-spacing: 1px;
     text-transform: uppercase;
 
     transition: var(--transition);
 }
 
-
 .browsemenu-button:hover {
     background: var(--gold);
-
     color: var(--dark-burgundy);
 }
-
 
 /* =====================================================
    MENU

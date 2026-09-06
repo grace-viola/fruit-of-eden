@@ -395,7 +395,7 @@
                 data-category="asian"
                 data-name="Eden Garden Ramen">
 
-            <div class="menu-image">
+            <div class="dish-image">
 
                 <img
                     src="assets/ramen.jpg"
@@ -406,35 +406,23 @@
 
             <div class="menu-card-content">
 
-                <div class="menu-card-top">
-
                     <h3>
                         Eden Garden Ramen
                     </h3>
-
-                    <span class="menu-price">
-                        ₱1,200
-                    </span>
-
-                </div>
 
                 <p>
                     A refined interpretation of Asian comfort
                     food with exotic seasonal ingredients.
                 </p>
 
-                <div class="menu-tag">
-
-                    <img
-                        src="assets/nonvegetarian.png"
-                        alt=""
-                    >
-
-                    <span>Non Vegetarian</span>
-
-                </div>
+                <span class="menu-tag">
+                    <span class="menu-tag-icon"><img src="assets/nonvegetarian.png" alt=""></span>
+                    NON VEGETARIAN
+                </span>
 
             </div>
+
+             <div class="menu-price">₱1,200</div>
 
         </article>
 
@@ -448,7 +436,7 @@
                 data-category="european"
                 data-name="Eden Truffle Risotto">
 
-            <div class="menu-image">
+            <div class="dish-image">
 
                 <img
                     src="assets/parmesianrissoto.jpg"
@@ -465,10 +453,6 @@
                         Eden Truffle Risotto
                     </h3>
 
-                    <span class="menu-price">
-                        ₱1,850
-                    </span>
-
                 </div>
 
                 <p>
@@ -476,18 +460,14 @@
                     truffle and delicate herbs.
                 </p>
 
-                <div class="menu-tag">
-
-                    <img
-                        src="assets/nonvegetarian.png"
-                        alt=""
-                    >
-
-                    <span>Non Vegetarian</span>
-
-                </div>
+                <span class="menu-tag">
+                    <span class="menu-tag-icon"><img src="assets/nonvegetarian.png" alt=""></span>
+                    NON VEGETARIAN
+                </span>
 
             </div>
+
+             <div class="menu-price">₱1,850</div>
 
         </article>
 
@@ -501,7 +481,7 @@
                 data-category="american"
                 data-name="Ember Glazed Short Rib">
 
-            <div class="menu-image">
+            <div class="dish-image">
 
                 <img
                     src="assets/boar steak.jpg"
@@ -518,10 +498,6 @@
                         Ember Glazed Short Rib
                     </h3>
 
-                    <span class="menu-price">
-                        ₱2,400
-                    </span>
-
                 </div>
 
                 <p>
@@ -529,18 +505,14 @@
                     with a rich, aromatic glaze.
                 </p>
 
-                <div class="menu-tag">
-
-                    <img
-                        src="assets/nonvegetarian.png"
-                        alt=""
-                    >
-
-                    <span>Non Vegetarian</span>
-
-                </div>
+                <span class="menu-tag">
+                    <span class="menu-tag-icon"><img src="assets/nonvegetarian.png" alt=""></span>
+                    NON VEGETARIAN
+                </span>
 
             </div>
+
+             <div class="menu-price">₱2,400</div>
 
         </article>
 
@@ -554,7 +526,7 @@
                 data-category="african"
                 data-name="Spiced Garden Plate">
 
-            <div class="menu-image">
+            <div class="dish-image">
 
                 <img
                     src="assets/massala platter.jpg"
@@ -571,10 +543,6 @@
                         Spiced Garden Plate
                     </h3>
 
-                    <span class="menu-price">
-                        ₱1,650
-                    </span>
-
                 </div>
 
                 <p>
@@ -582,18 +550,14 @@
                     African flavors.
                 </p>
 
-                <div class="menu-tag">
-
-                    <img
-                        src="assets/vegetarian.png"
-                        alt=""
-                    >
-
-                    <span>Vegetarian</span>
-
-                </div>
+                <span class="menu-tag">
+                    <span class="menu-tag-icon"><img src="assets/vegetarian.png" alt=""></span>
+                    VEGETARIAN
+                </span>
 
             </div>
+
+             <div class="menu-price">₱1,650</div>
 
         </article>
 
@@ -607,7 +571,7 @@
                 data-category="australian"
                 data-name="Eden Coast Catch">
 
-            <div class="menu-image">
+            <div class="dish-image">
 
                 <img
                     src="assets/squid salad.jpg"
@@ -624,10 +588,6 @@
                         Eden Coast Catch
                     </h3>
 
-                    <span class="menu-price">
-                        ₱2,100
-                    </span>
-
                 </div>
 
                 <p>
@@ -635,18 +595,14 @@
                     the flavors of the Australian coast.
                 </p>
 
-                <div class="menu-tag">
-
-                    <img
-                        src="assets/nonvegetarian.png"
-                        alt=""
-                    >
-
-                    <span>Non Vegetarian</span>
-
-                </div>
+                <span class="menu-tag">
+                    <span class="menu-tag-icon"><img src="assets/nonvegetarian.png" alt=""></span>
+                    NON VEGETARIAN
+                </span>
 
             </div>
+
+             <div class="menu-price">₱2,100</div>
 
         </article>
 
@@ -660,7 +616,7 @@
                 data-category="european"
                 data-name="Paradise Pastry">
 
-            <div class="menu-image">
+            <div class="dish-image">
 
                 <img
                     src="assets/swiss cherry pastry.jpg"
@@ -677,10 +633,6 @@
                         Paradise Pastry
                     </h3>
 
-                    <span class="menu-price">
-                        ₱950
-                    </span>
-
                 </div>
 
                 <p>
@@ -688,18 +640,17 @@
                     by the temptation of Eden.
                 </p>
 
-                <div class="menu-tag">
 
-                    <img
-                        src="assets/vegetarian.png"
-                        alt=""
-                    >
+                <span class="menu-tag">
+                    <span class="menu-tag-icon"><img src="assets/vegetarian.png" alt=""></span>
+                    VEGETARIAN
+                </span>
 
-                    <span>Vegetarian</span>
-
-                </div>
+                </span>
 
             </div>
+
+             <div class="menu-price">₱950</div>
 
         </article>
 
@@ -744,51 +695,34 @@
 
 </section>
 
+<section class="story-section">
+    <div class="container story-grid">
 
-<!-- =====================================================
-     OUR STORY
-===================================================== -->
+        <div class="story-image">
+            <img src="assets/images/story-frame.png" alt="A cozy corner of the Fruit of Eden dining room">
+        </div>
 
-<section class="story-section section-padding"
-         id="story">
+        <div class="story-content">
+            <p class="eyebrow">OUR STORY</p>
 
-    <div class="story-content">
+            <h2>
+                Each bite has a
+                <em>creation</em> story.
+            </h2>
 
-        <p class="eyebrow dark">
-            OUR STORY
-        </p>
+            <p class="story-description">
+                Everything started in paradise. At Fruit of Eden,
+                we bring you back to the flavors of creation:
+                pure and <em>sinfully good</em>.
+            </p>
 
-        <h2>
-            Each bite has a
-            <em>creation story.</em>
-        </h2>
-
-        <p>
-            Everything started in paradise.
-            At Fruit of Eden, we bring you back
-            to the flavors of creation:
-            pure and sinfully good.
-        </p>
-
-        <a href="about.php"
-           class="outline-button">
-
-            About Us
-
-        </a>
+            <a href="about.php" class="story-button">
+                About Us
+            </a>
+        </div>
 
     </div>
-
-
-    <div class="story-image image-placeholder">
-
-        <span>STORY IMAGE</span>
-
-    </div>
-
 </section>
-
-
 
 <!-- =====================================================
      VIP DINERS

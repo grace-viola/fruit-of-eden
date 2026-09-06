@@ -1059,7 +1059,7 @@ h2 {
 
     width: 100%;
 
-    min-height: 132px;
+    min-height: 100px;
 
     display: flex;
 
@@ -1097,9 +1097,9 @@ h2 {
 
     color: var(--dark-burgundy);
 
-    font-size: 20px;
+    font-size: 15px;
 
-    font-weight: 700;
+    font-weight: 600;
 
     letter-spacing: 3px;
 
@@ -1219,190 +1219,93 @@ h2 {
 }
 
 /* =====================================================
-   MENU GRID
-===================================================== */
-
-.menu-grid {
-    display: flex;
-
-    flex-direction: column;
-
-    width: 100%;
-
-    max-width: 1050px;
-
-    margin: 55px auto 0;
-
-    box-sizing: border-box;
-}
-
-
-/* =====================================================
    MENU CARD / DISH ROW
 ===================================================== */
 
 .menu-card {
-    position: relative;
-
     display: grid;
-
-    grid-template-columns: 280px 1fr;
-
-    column-gap: 45px;
-
+    grid-template-columns: 200px 1fr auto;
+    align-items: center;
+    column-gap: 40px;
     width: 100%;
-
-    min-width: 0;
-
-    padding: 45px 0;
-
-    box-sizing: border-box;
-
+    padding: 40px 0;
+    margin: 0;
     background: transparent;
-
-    border-bottom: 1px solid rgba(100, 24, 27, 0.55);
-
-    overflow: visible;
-
-    transition: none;
-}
-
-
-/* Remove card hover movement */
-
-.menu-card:hover {
-    transform: none;
-}
-
-
-/* Hidden category items */
-
-.menu-card.hidden {
-    display: none;
+    border-bottom: 1px solid rgba(100, 24, 27, 0.45);
+    box-sizing: border-box;
 }
 
 /* =====================================================
-   MENU IMAGE
+   DISH IMAGE
 ===================================================== */
 
-.menu-image {
-    width: 100%;
-
-    aspect-ratio: 4 / 3;
-
-    overflow: hidden;
-
-    /* NO GREY BACKGROUND */
-    background: transparent;
-
-    flex-shrink: 0;
-
-    margin-bottom: 22px;
-}
-
-.menu-image img {
-    display: block;
-
+.dish-image {
+    position: relative;
     width: 200px;
-    height: 200px;
-
-    object-fit: cover;
-    object-position: center;
-
-    max-width: 100%;
-
-    transition: transform 0.5s ease;
-
-    border-radius: 10px;
+    height: 180px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--dark-burgundy);
+    box-sizing: border-box;
 }
 
-.menu-card:hover .menu-image img {
-    transform: scale(1.04);
+.dish-image::before,
+.dish-image::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: url("assets/icons/singlestarright.png") center / contain no-repeat;
+    pointer-events: none;
 }
 
+.dish-image::before {
+    top: -11px;
+    left: -11px;
+}
+
+.dish-image::after {
+    bottom: -11px;
+    right: -11px;
+}
 
 /* =====================================================
    MENU CARD CONTENT
 ===================================================== */
 
 .menu-card-content {
-    width: 100%;
-
+    width: auto;
+    max-width: 640px;
+    min-width: 0;
     padding: 0;
-
+    margin: 0;
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
-
-    flex: 1;
-}
-
-
-/* =====================================================
-   DISH NAME + PRICE
-===================================================== */
-
-.menu-card-top {
-    width: 100%;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    gap: 15px;
-
-    margin-bottom: 12px;
-
-    box-sizing: border-box;
+    justify-content: center;
 }
 
 .menu-card h3 {
-    margin: 0;
-
-    min-width: 0;
-
+    margin: 0 0 12px;
     color: var(--dark-burgundy);
-
     font-family: "Playfair Display", serif;
-
-    font-size: 25px;
-    font-weight: 400;
-
+    font-size: 30px;
+    font-weight: 600;
     line-height: 1.15;
-
     overflow-wrap: break-word;
 }
-
-.menu-price {
-    flex-shrink: 0;
-
-    color: var(--burgundy);
-
-    font-family: "Playfair Display", serif;
-
-    font-size: 16px;
-
-    white-space: nowrap;
-}
-
-
-/* =====================================================
-   MENU DESCRIPTION
-===================================================== */
 
 .menu-card-content > p {
+    max-width: 560px;
     margin: 0 0 16px;
-
-    color: #665555;
-
-    font-size: 12px;
-
-    line-height: 1.7;
-
+    color: var(--dark-burgundy);
+    font-size: 16px;
+    line-height: 1.5;
     overflow-wrap: break-word;
 }
-
 
 /* =====================================================
    MENU TAG
@@ -1410,41 +1313,43 @@ h2 {
 
 .menu-tag {
     display: inline-flex;
-
     align-items: center;
-
-    gap: 7px;
-
-    margin-top: 0;
-
+    gap: 10px;
     color: var(--dark-gold);
-
-    font-size: 9px;
-
+    font-size: 12px;
     font-weight: bold;
-
     letter-spacing: 1.5px;
-
     text-transform: uppercase;
-
     line-height: 1;
-
     white-space: nowrap;
 }
 
+.menu-tag-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 26px;
+    border: 1px solid var(--dark-burgundy);
+    border-radius: 7px;
+    flex-shrink: 0;
+}
+
+.menu-tag-icon img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
 /* =====================================================
-   MENU TAG ICON
+   PRICE
 ===================================================== */
 
-.menu-tag img {
-    width: 25px;
-    height: 25px;
-
-    display: block;
-
-    object-fit: contain;
-
-    flex-shrink: 0;
+.menu-price {
+    grid-column: 3;
+    color: var(--burgundy);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
 }
 
 /* =====================================================

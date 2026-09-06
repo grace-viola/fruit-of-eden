@@ -135,12 +135,10 @@
     <!-- HERO CONTENT -->
     <div class="hero-content">
 
-        <p class="eyebrow">
-            SINFULLY GOOD
-            <span class="eyebrow-line"></span>
-        <img src="assets/icons/sparkle.png" alt="" class="sparkle sparkle-eyebrow">
-        </p>
-
+        <div class="eyebrow-row">
+            <p class="eyebrow">SINFULLY GOOD</p>
+            <img src="assets/singlestarleft.png" alt="" class="sparkle sparkle-eyebrow">
+        </div>
         <h1>
             Indulge in Exotic
             <em>Temptation.</em>
@@ -151,6 +149,8 @@
             a curated menu from all over the globe
             guaranteed to surprise your tongue.
         </p>
+
+        <img src="assets/doublestar.png" alt="" class="sparkle sparkle-button sparkle-right">
 
         <a href="reservations.php" class="gold-button">
             Save a Seat
@@ -293,9 +293,13 @@
 
     <div class="browsemenu-content">
 
-        <p class="eyebrow">
-            OUR MENU
-        </p>
+        <div class="eyebrow-row">
+            <img src="assets/singlestarright.png" alt="" class="sparkle sparkle-eyebrow">
+            <span class="eyebrow-line"></span>
+            <p class="eyebrow">
+                OUR MENU
+            </p>
+        </div>
 
         <h2>
             Flavors straight
@@ -306,6 +310,8 @@
             Curated from cuisines all over the globe,
             six continents, six flavors, all in one plate.
         </p>
+
+        <img src="assets/doublestar.png" alt="" class="sparkle sparkle-above-button">
 
         <a href="#contact"
            class="browsemenu-button">
@@ -321,7 +327,7 @@
 
 
 <!-- =====================================================
-     MENU
+     OUR MENU
 ===================================================== -->
 
 <section class="menu-section section-padding"

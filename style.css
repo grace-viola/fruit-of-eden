@@ -487,6 +487,24 @@ h2 {
 /* =====================================================
    EYEBROW
 ===================================================== */
+.eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.eyebrow-row .eyebrow {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.sparkle-eyebrow {
+    width: 300px;
+    height: 30px;
+    flex-shrink: 0;
+    transform: translateY(-10px); /* tweak this value up/down until it sits centered */
+}
 
 .hero .eyebrow {
 
@@ -503,6 +521,7 @@ h2 {
     text-transform: uppercase;
 
 }
+
 
 
 /* =====================================================
@@ -553,6 +572,12 @@ h2 {
 
 }
 
+.sparkle-button {
+    width: 520px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-bottom: 40px;
+}
 
 /* =====================================================
    BUTTON
@@ -810,6 +835,29 @@ h2 {
 /* =====================================================
    RIGHT CONTENT
 ===================================================== */
+.browsemenu-content .eyebrow-row .eyebrow {
+    margin: 0;
+    white-space: nowrap;
+    transform: translateY(-10px);
+    margin-right: 2px;
+}
+
+.sparkle-above-button {
+    width: 520px;
+    height: 30px;
+    margin: 0 0 12px auto;  
+    margin-bottom: 30px; 
+    /* auto left-margin keeps it flush right like everything else; */
+}
+
+.sparkle-eyebrow {
+    margin-right: 2px;
+    width: 300px;
+    height: 30px;
+    flex: none;
+    flex-shrink: 0;
+    transform: translateY(-10px); /* tweak this value up/down until it sits centered */
+}
 
 .browsemenu-content {
     position: relative;
@@ -894,7 +942,7 @@ h2 {
 
     font-weight: 400;
 
-    line-height: 0.95;
+    line-height: 1.2;
 
     text-align: right;
 }
@@ -925,7 +973,7 @@ h2 {
 
     font-size: 17px;
 
-    line-height: 1.9;
+    line-height: 1.5;
 
     text-align: right;
 }

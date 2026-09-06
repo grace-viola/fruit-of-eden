@@ -773,7 +773,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 90px;
 }
 
 .locate-button {
@@ -839,11 +839,11 @@ h2 {
     margin: 0;
     white-space: nowrap;
     transform: translateY(-10px);
-    margin-right: 2px;
+    gap: 2px;
 }
 
 .sparkle-above-button {
-    width: 520px;
+    width: 420px;
     height: 30px;
     margin: 0 0 12px auto;  
     margin-bottom: 30px; 
@@ -851,9 +851,9 @@ h2 {
 }
 
 .sparkle-eyebrow {
-    margin-right: 2px;
+    margin-right: px;
     width: 300px;
-    height: 30px;
+    height: 25px;
     flex: none;
     flex-shrink: 0;
     transform: translateY(-10px); /* tweak this value up/down until it sits centered */
@@ -916,13 +916,21 @@ h2 {
    EYEBROW
 ===================================================== */
 
-.browsemenu-content .eyebrow {
-    width: 100%;
-
+.browsemenu-content .eyebrow-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;        /* row must stay full width */
+    align-self: stretch; /* belt-and-suspenders in case parent stretch got overridden */
     margin: 0 0 18px;
+}
 
-    text-align: right;
-
+.browsemenu-content .eyebrow-row .eyebrow {
+    margin: 0;
+    white-space: nowrap;
+    width: fit-content;  /* only the text box shrinks */
+    flex: none;
     font-size: 15px;
 }
 
@@ -1025,117 +1033,167 @@ h2 {
 
 }
 
+/* =====================================================
+   MENU CONTROLS
+===================================================== */
 
-.menu-heading {
+.menu-controls {
+
+    width: 100%;
 
     display: flex;
 
-    align-items: flex-end;
+    flex-direction: column;
 
-    justify-content: space-between;
+    align-items: stretch;
 
-    gap: 50px;
-
-    margin-bottom: 60px;
-
+    box-sizing: border-box;
 }
 
 
-.menu-heading h2 {
+/* =====================================================
+   CUISINE NAVIGATION
+===================================================== */
 
-    font-size: clamp(50px, 6vw, 85px);
+.category-buttons {
 
-}
+    width: 100%;
 
-
-.text-link {
-
-    color: var(--burgundy);
-
-    font-size: 10px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-
-}
-
-
-.menu-controls {
+    min-height: 132px;
 
     display: flex;
 
     align-items: center;
 
-    justify-content: space-between;
+    justify-content: space-evenly;
 
-    gap: 30px;
+    gap: 20px;
 
-    padding: 20px 0;
+    padding: 20px 45px;
 
-    border-top: 1px solid rgba(85, 20, 20, 0.2);
+    box-sizing: border-box;
 
-    border-bottom: 1px solid rgba(85, 20, 20, 0.2);
+    border: 1px solid var(--burgundy);
 
+    background: transparent;
 }
 
 
-.category-buttons {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 10px;
-
-}
-
+/* =====================================================
+   CUISINE BUTTONS
+===================================================== */
 
 .category-button {
 
-    padding: 8px 12px;
+    flex: 0 0 auto;
 
-    border: 0;
+    padding: 15px 35px;
 
-     
+    border: none;
+
+    border-radius: 0;
 
     background: transparent;
 
     color: var(--dark-burgundy);
 
-    font-size: 9px;
+    font-size: 20px;
 
-    letter-spacing: 1.5px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
 
     text-transform: uppercase;
 
+    cursor: pointer;
+
+    transition: var(--transition);
 }
 
 
-.category-button.active,
-.category-button:hover {
+/* ACTIVE — ALL */
+
+.category-button.active {
+
+    background: var(--dark-burgundy);
+
+    color: var(--cream);
+
+    border-radius: 6px;
+}
+
+
+/* HOVER */
+
+.category-button:hover:not(.active) {
+
+    color: var(--burgundy);
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.menu-search {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    margin-top: 60px;
+
+    padding-right: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* SEARCH ICON */
+
+.search-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 38px;
+
+    height: 38px;
+
+    margin-right: 10px;
 
     color: var(--burgundy);
 
-    text-decoration: underline;
+    font-size: 38px;
 
-    text-underline-offset: 5px;
+    line-height: 1;
 
+    transform: rotate(-20deg);
 }
 
-/* menu search */
+
+/* SEARCH INPUT */
 
 .menu-search input {
 
     width: 180px;
 
-    padding: 10px 0;
+    height: 48px;
 
-    border: 0;
+    padding: 0 15px;
 
-    border-bottom: 1px solid var(--dark-burgundy);
+    box-sizing: border-box;
+
+    border: 1px solid var(--burgundy);
+
+    border-radius: 0;
 
     outline: none;
 
@@ -1143,59 +1201,85 @@ h2 {
 
     color: var(--dark-burgundy);
 
-    font-size: 11px;
+    font-size: 15px;
+}
+
+
+.menu-search input::placeholder {
+
+    color: #8d7777;
 
 }
 
+
+.menu-search input:focus {
+
+    border-color: var(--dark-burgundy);
+
+}
 
 /* =====================================================
    MENU GRID
 ===================================================== */
 
 .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
 
-    /* distance between each dish */
-    column-gap: 45px;
-    row-gap: 70px;
-
-    margin-top: 55px;
+    flex-direction: column;
 
     width: 100%;
+
+    max-width: 1050px;
+
+    margin: 55px auto 0;
+
     box-sizing: border-box;
 }
 
 
 /* =====================================================
-   MENU CARD
+   MENU CARD / DISH ROW
 ===================================================== */
 
 .menu-card {
-    min-width: 0;
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    column-gap: 45px;
+
     width: 100%;
 
-    /* REMOVE CARD BACKGROUND */
-    background: transparent;
+    min-width: 0;
 
-    overflow: visible;
+    padding: 45px 0;
 
     box-sizing: border-box;
 
-    display: flex;
-    flex-direction: column;
+    background: transparent;
 
-    transition: transform var(--transition);
+    border-bottom: 1px solid rgba(100, 24, 27, 0.55);
+
+    overflow: visible;
+
+    transition: none;
 }
+
+
+/* Remove card hover movement */
 
 .menu-card:hover {
-    transform: translateY(-5px);
+    transform: none;
 }
+
+
+/* Hidden category items */
 
 .menu-card.hidden {
     display: none;
 }
-
 
 /* =====================================================
    MENU IMAGE
@@ -1219,8 +1303,8 @@ h2 {
 .menu-image img {
     display: block;
 
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
 
     object-fit: cover;
     object-position: center;
@@ -1228,6 +1312,8 @@ h2 {
     max-width: 100%;
 
     transition: transform 0.5s ease;
+
+    border-radius: 10px;
 }
 
 .menu-card:hover .menu-image img {
@@ -1538,6 +1624,15 @@ h2 {
     background: var(--gold);
 
     color: var(--dark-burgundy);
+}
+
+.menu-outro-pattern {
+    width: 500px;
+    height: 20px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 /* =====================================================

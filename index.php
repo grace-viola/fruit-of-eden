@@ -176,10 +176,6 @@
             >
         </div>
 
-            <p class="eyebrow dark">
-                WELCOME TO EDEN
-            </p>
-
             <h2>
                 Nourished by Nature,
                 <em>Inspired by Eden.</em>
@@ -295,7 +291,6 @@
 
         <div class="eyebrow-row">
             <img src="assets/singlestarright.png" alt="" class="sparkle sparkle-eyebrow">
-            <span class="eyebrow-line"></span>
             <p class="eyebrow">
                 OUR MENU
             </p>
@@ -333,80 +328,58 @@
 <section class="menu-section section-padding"
          id="menu">
 
-    <div class="menu-heading">
+    <!-- =====================================================
+     MENU CONTROLS
+===================================================== -->
 
-        <div>
+<div class="menu-controls">
 
-            <h2>
-                Our <em>Menu</em>
-            </h2>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- CATEGORY FILTER -->
-
-    <div class="menu-controls">
-
+        <!-- CUISINE NAVIGATION -->
         <div class="category-buttons">
 
-            <button class="category-button active"
-                    data-category="all">
-
-                All
-
+            <button class="category-button active" data-category="all">
+                ALL
             </button>
 
-            <button class="category-button"
-                    data-category="asian">
-
-                Asian
-
+            <button class="category-button" data-category="asian">
+                ASIAN
             </button>
 
-            <button class="category-button"
-                    data-category="african">
-
-                African
-
+            <button class="category-button" data-category="african">
+                AFRICAN
             </button>
 
-            <button class="category-button"
-                    data-category="american">
-
-                American
-
+            <button class="category-button" data-category="american">
+                AMERICAN
             </button>
 
-            <button class="category-button"
-                    data-category="european">
-
-                European
-
+            <button class="category-button" data-category="european">
+                EUROPEAN
             </button>
 
-            <button class="category-button"
-                    data-category="australian">
-
-                Australian
-
+            <button class="category-button" data-category="european">
+                AUSTRALIAN
             </button>
+
 
         </div>
 
 
+        <!-- SEARCH -->
         <div class="menu-search">
 
-            <input type="search"
-                   id="menuSearch"
-                   placeholder="Search food...">
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                id="menuSearch"
+                placeholder="Search"
+            >
 
         </div>
 
-    </div>
+</div>
+
 
     <!-- =====================================================
         MENU CARDS
@@ -760,6 +733,13 @@
 
         </div>
 
+    </div>
+
+    <div class="menu-outro-pattern">
+            <img
+                src="assets/doublestarred.png"
+                alt=""
+            >
     </div>
 
 </section>

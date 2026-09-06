@@ -392,7 +392,7 @@ h2 {
 
     text-decoration: none;
 
-    font-size: 10px;
+    font-size: 15px;
 
     letter-spacing: 1.5px;
 
@@ -639,6 +639,8 @@ h2 {
     padding: 13px 26px;
 
     border: 1px solid var(--gold);
+
+     
 
     background: var(--gold);
 
@@ -1094,26 +1096,6 @@ h2 {
 }
 
 
-.menu-introduction {
-
-    max-width: 400px;
-
-}
-
-
-.menu-introduction p {
-
-    margin-bottom: 20px;
-
-    color: #665555;
-
-    font-size: 13px;
-
-    line-height: 1.8;
-
-}
-
-
 .text-link {
 
     color: var(--burgundy);
@@ -1164,6 +1146,8 @@ h2 {
     padding: 8px 12px;
 
     border: 0;
+
+     
 
     background: transparent;
 
@@ -1410,7 +1394,6 @@ h2 {
     white-space: nowrap;
 }
 
-
 /* =====================================================
    MENU TAG ICON
 ===================================================== */
@@ -1427,70 +1410,183 @@ h2 {
 }
 
 /* =====================================================
-   SPECIALS
+   SEASONAL & CHEF'S SPECIALS
 ===================================================== */
 
-.special-section {
+.menu-specials {
 
     display: grid;
 
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 25% 35% 40%;
+
+    align-items: center;
+
+    width: 100%;
+
+    height: 238px;
+
+    margin-top: 65px;
+
+    padding: 0 5%;
+
+    box-sizing: border-box;
 
     background: var(--dark-burgundy);
 
     color: var(--cream);
 
+    border-radius: 14px;
+
+    overflow: hidden;
 }
 
 
-.special-image {
+/* =====================================================
+   SPECIALS IMAGE
+===================================================== */
 
-    min-height: 650px;
+.menu-specials-image {
 
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 100%;
+}
+
+.menu-specials-image img {
+
+    display: block;
+
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: contain;
 }
 
 
-.special-content {
+/* =====================================================
+   SPECIALS TITLE
+===================================================== */
+
+.menu-specials-title {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    padding-left: 10px;
+
+    box-sizing: border-box;
+}
+
+.menu-specials-title p {
+
+    margin: 0;
+
+    color: var(--gold);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 26px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: 0;
+}
+
+
+/* =====================================================
+   SPECIALS ACTION
+===================================================== */
+
+.menu-specials-action {
 
     display: flex;
 
     flex-direction: column;
 
+    align-items: center;
+
     justify-content: center;
 
-    padding: 12%;
+    text-align: center;
 
+    padding: 0 20px;
+
+    box-sizing: border-box;
 }
 
+.menu-specials-action p {
 
-.special-content h2 {
+    max-width: 430px;
 
-    margin-bottom: 30px;
-
-}
-
-
-.special-content h2 em {
-
-    display: block;
+    margin: 0 0 14px;
 
     color: var(--gold);
 
+    font-size: 17px;
+
+    line-height: 1.25;
 }
 
 
-.special-content > p {
+/* =====================================================
+   CATERING BUTTON
+===================================================== */
 
-    margin-bottom: 35px;
+.special-catering-button {
 
-    color: #e8ddd0;
+    display: inline-flex;
 
-    font-size: 13px;
+    align-items: center;
 
-    line-height: 1.9;
+    justify-content: center;
 
+    min-width: 210px;
+
+    height: 50px;
+
+    padding: 0 25px;
+
+    box-sizing: border-box;
+
+    border: 1px solid var(--gold);
+
+     
+
+    color: var(--gold);
+
+    background: transparent;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    transition: var(--transition);
 }
 
+.special-catering-button:hover {
+
+    background: var(--gold);
+
+    color: var(--dark-burgundy);
+}
 
 /* =====================================================
    STORY

@@ -180,7 +180,7 @@
                 WELCOME TO EDEN
             </p>
 
-            <h2 font: >
+            <h2>
                 Nourished by Nature,
                 <em>Inspired by Eden.</em>
             </h2>
@@ -338,24 +338,6 @@
             <h2>
                 Our <em>Menu</em>
             </h2>
-
-        </div>
-
-
-        <div class="menu-introduction">
-
-            <p>
-                Step into an experience where exceptional
-                ingredients, global flavors, and refined
-                dining meet.
-            </p>
-
-            <a href="menu.php"
-               class="text-link">
-
-                Browse Menu →
-
-            </a>
 
         </div>
 
@@ -748,51 +730,37 @@
 
     </div>
 
-</section>
+    <!-- =====================================================
+    SEASONAL & CHEF'S SPECIALS
+    ===================================================== -->
 
+    <div class="menu-specials">
 
+        <div class="menu-specials-image">
+            <img src="assets/chef icon.png"
+                alt="Seasonal and Chef's Specials">
+        </div>
 
-<!-- =====================================================
-     CHEF'S SPECIALS
-===================================================== -->
+        <div class="menu-specials-title">
+            <p>SEASONAL AND CHEF'S SPECIALS</p>
+        </div>
 
-<section class="special-section">
+        <div class="menu-specials-action">
 
-    <div class="special-image image-placeholder">
+            <p>
+                Need the finest catering services for your
+                most special occasions?
+            </p>
 
-        <span>CHEF'S SPECIAL IMAGE</span>
+            <a href="#contact" class="special-catering-button">
+                AVAIL CATERING
+            </a>
 
-    </div>
-
-
-    <div class="special-content">
-
-        <p class="eyebrow">
-            SEASONAL & CHEF'S SPECIALS
-        </p>
-
-        <h2>
-            Made for your
-            <em>most special occasions.</em>
-        </h2>
-
-        <p>
-            Let Fruit of Eden create an unforgettable
-            culinary experience for your celebrations,
-            gatherings, and most meaningful moments.
-        </p>
-
-        <a href="#contact"
-           class="gold-button">
-
-            Avail Catering
-
-        </a>
+        </div>
 
     </div>
 
 </section>
-
 
 
 <!-- =====================================================

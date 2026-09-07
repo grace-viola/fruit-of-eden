@@ -695,18 +695,22 @@
 
 </section>
 
+<!-- =====================================================
+    ABOUT US
+===================================================== -->
+
 <section class="story-section">
     <div class="container story-grid">
 
         <div class="story-image">
-            <img src="assets/images/story-frame.png" alt="A cozy corner of the Fruit of Eden dining room">
+            <img src="assets/storyimage.png" alt="A cozy corner of the Fruit of Eden dining room">
         </div>
 
         <div class="story-content">
             <p class="eyebrow">OUR STORY</p>
 
             <h2>
-                Each bite has a
+                Each bite has a<br>
                 <em>creation</em> story.
             </h2>
 

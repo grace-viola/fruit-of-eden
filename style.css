@@ -1571,6 +1571,8 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    width: fit-content;   /* container now hugs its widest child (the heading) */
+    max-width: 60ch;      /* keep this in sync with your paragraph's max-width */
 }
 
 .story-content .eyebrow {
@@ -1592,7 +1594,7 @@ h2 {
 }
 
 .story-content h2 em {
-    color: var(--burgundy);
+    color: var(--dark burgundy);
     font-style: italic;
 }
 
@@ -1609,11 +1611,17 @@ h2 {
     color: var(--burgundy);
 }
 
+.aboutus-outro-pattern{
+    width:450px;
+    height:30px;
+    margin-bottom: 30px;
+}
+
 /* ---------- About Us button — plain rectangle, no pill/sparkles ---------- */
 
 .story-button {
     display: inline-flex;
-    align-items: center;
+    align-self: center;
     justify-content: center;
     width: fit-content;
     padding: 14px 34px;
@@ -1654,174 +1662,222 @@ h2 {
     }
 }
 
+/* ---------- Outer red panel: full-bleed background ---------- */
 
-/* =====================================================
-   VIP
-===================================================== */
-
-.vip-section {
-
-    position: relative;
-
-    min-height: 650px;
-
-    display: flex;
-
-    align-items: center;
-
-    background: var(--burgundy);
-
-    color: var(--cream);
-
-    overflow: hidden;
-
+.vip-testimonials-panel {
+    width: 100%;
+    padding: 60px 0 50px;
+    background: var(--dark-burgundy);
+    box-sizing: border-box;
 }
 
+/* ---------- Inner container: cream decorative border, inset from red edges ---------- */
+
+.panel-inner {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    border: 1px solid var(--gold);
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+/* ---------- VIP row: card + overflowing image as positioned siblings ---------- */
+
+.vip-row {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.vip-card {
+    background: var(--gold);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.vip-text {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    padding: 44px 40px;
+    box-sizing: border-box;
+}
+
+.vip-text h2 {
+    margin: 0 0 16px;
+    color: var(--dark-burgundy);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(26px, 2.6vw, 34px);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.vip-text h2 em {
+    color: var(--dark burgundy);
+    font-style: italic;
+}
+
+.vip-text p {
+    max-width: 40ch;
+    margin: 0 0 26px;
+    color: var(--dark-burgundy);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.vip-button {
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    gap: 12px;
+    width: fit-content;
+    padding: 14px 34px;
+    box-sizing: border-box;
+    border: 1px solid var(--dark-burgundy);
+    border-radius: 4px;
+    background: var(--dark-burgundy);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.vip-button:hover {
+    background: var(--burgundy);
+}
+
+.vip-button-sparkle {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+/* ---------- Image: absolutely positioned, breaks out above the card ---------- */
 
 .vip-image {
-
     position: absolute;
-
-    inset: 0;
-
-}
-
-
-.vip-overlay {
-
-    position: absolute;
-
-    inset: 0;
-
-    z-index: 1;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(85,20,20,0.96),
-            rgba(85,20,20,0.65),
-            rgba(85,20,20,0.25)
-        );
-
-}
-
-
-.vip-content {
-
-    position: relative;
-
+    top: -70px;          /* how far it pokes above the card — tune to taste */
+    right: 0;
+    bottom: 0;
+    width: 320px;
     z-index: 2;
-
-    max-width: 650px;
-
-    margin-left: 10%;
-
 }
 
-
-.vip-content h2 {
-
-    margin-bottom: 30px;
-
-}
-
-
-.vip-content h2 em {
-
+.vip-image img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
 
+/* ---------- Testimonials ---------- */
+
+.testimonials-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-bottom: 44px;
+}
+
+.testimonial-item {
+    max-width: 260px;
+    text-align: center;
+}
+
+.testimonial-center {
+    margin: 0 auto 50px;
+}
+
+.testimonial-quote-mark {
+    margin: 0 0 6px;
     color: var(--gold);
-
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    line-height: 1;
 }
 
-
-.vip-content > p {
-
-    max-width: 500px;
-
-    margin-bottom: 35px;
-
-    color: #e8ddd0;
-
-    font-size: 13px;
-
-    line-height: 1.9;
-
+.testimonial-text {
+    margin: 0 0 16px;
+    color: var(--cream);
+    font-size: 14px;
+    line-height: 1.6;
 }
 
-
-/* =====================================================
-   TESTIMONIALS
-===================================================== */
-
-.testimonial-section {
-
-    background: var(--cream);
-
-}
-
-
-.testimonial-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 30px;
-
-}
-
-
-.testimonial {
-
-    padding: 40px;
-
-    border: 1px solid rgba(85, 20, 20, 0.2);
-
-}
-
-
-.quote-mark {
-
-    margin-bottom: 20px;
-
+.testimonial-name {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 10px;
+    margin: 0;
     color: var(--gold);
-
     font-family: "Playfair Display", serif;
-
-    font-size: 65px;
-
-    line-height: 0.5;
-
-}
-
-
-.testimonial p {
-
-    margin-bottom: 30px;
-
-    font-family: "Playfair Display", serif;
-
-    font-size: 22px;
-
+    font-size: 16px;
     font-style: italic;
-
-    line-height: 1.5;
-
 }
 
+.testimonials-outro-pattern {
+    width: 500px;
+    height: 20px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
 
-.testimonial span {
+/* ---------- Eyebrow + divider at bottom ---------- */
 
-    color: var(--dark-gold);
-
-    font-size: 10px;
-
+.testimonials-eyebrow {
+    margin: 0 0 20px;
+    color: var(--cream);
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
     letter-spacing: 1px;
-
 }
 
+.vip-testimonials-panel .section-divider {
+    margin: 0 auto;
+}
+
+.vip-testimonials-panel .divider-line {
+    background: var(--gold);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 860px) {
+    .vip-testimonials-panel {
+        padding: 44px 28px 40px;
+    }
+
+    .vip-card {
+        padding: 36px 24px 130px;
+    }
+
+    .vip-image {
+        position: static;
+        width: 100%;
+        height: 220px;
+        margin-top: 24px;
+    }
+
+    .vip-row {
+        margin-bottom: 60px;
+    }
+
+    .testimonials-row {
+        gap: 40px;
+    }
+}
 
 /* =====================================================
    CONTACT SECTION

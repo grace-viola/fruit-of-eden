@@ -720,6 +720,13 @@
                 pure and <em>sinfully good</em>.
             </p>
 
+            <div class="aboutus-outro-pattern">
+            <img
+                src="assets/doublestarred.png"
+                alt=""
+            >
+    </div>
+
             <a href="about.php" class="story-button">
                 About Us
             </a>
@@ -728,137 +735,78 @@
     </div>
 </section>
 
-<!-- =====================================================
-     VIP DINERS
-===================================================== -->
+<!-- ================= VIP + TESTIMONIALS PANEL ================= -->
+<section class="vip-testimonials-section">
+    <div class="container">
+        <div class="vip-testimonials-panel">
 
-<section class="vip-section"
-         id="vip">
+            <div class="panel-inner">
 
-    <div class="vip-overlay"></div>
+                <!-- ---------- VIP ROW ---------- -->
+                <div class="vip-row">
+                    <div class="vip-card">
+                        <div class="vip-text">
+                            <h2>
+                                Own exclusive entry<br>
+                                to <em>paradise</em>.
+                            </h2>
+                            <p>
+                                Enjoy lifetime VIP perks, unlimited access to state-of-the-art
+                                lounge areas and extra special dishes from top-rated chefs.
+                                Make every meal extra special.
+                            </p>
+                            <a href="vip.php" class="vip-button">
+                                <img src="assets/icons/singlestarright.png" alt="" class="vip-button-sparkle">
+                                Be a VIP
+                                <img src="assets/icons/singlestarright.png" alt="" class="vip-button-sparkle">
+                            </a>
+                        </div>
+                    </div>
 
+                    <!-- image now sits outside .vip-card so it can overflow above it -->
+                    <div class="vip-image">
+                        <img src="assets/vipimage.png" alt="VIP guest enjoying an exclusive dish">
+                    </div>
+                </div>
+            <!-- ---------- TESTIMONIALS ---------- -->
+            <div class="testimonials-row">
+                <div class="testimonial-item">
+                    <p class="testimonial-quote-mark">&ldquo;</p>
+                    <p class="testimonial-text">Absolutely delightful. Finest of all time. Everybody who can, must try.</p>
+                    <p class="testimonial-name">
+                        <img src="assets/icons/singlestarright.png" alt="" class="testimonial-sparkle">
+                        Saransh Agrawal
+                    </p>
+                </div>
 
-    <div class="vip-image image-placeholder">
+                <div class="testimonial-item">
+                    <p class="testimonial-quote-mark">&ldquo;</p>
+                    <p class="testimonial-text">Absolutely delightful. Finest of all time. Everybody who can, must try.</p>
+                    <p class="testimonial-name">
+                        <img src="assets/icons/singlestarright.png" alt="" class="testimonial-sparkle">
+                        Saransh Agrawal
+                    </p>
+                </div>
+            </div>
 
-        <span>VIP LOUNGE IMAGE</span>
+            <div class="testimonial-item testimonial-center">
+                <p class="testimonial-quote-mark">&ldquo;</p>
+                <p class="testimonial-text">Absolutely delightful. Finest of all time. Everybody who can, must try.</p>
+                <p class="testimonial-name">
+                    <img src="assets/icons/singlestarright.png" alt="" class="testimonial-sparkle">
+                    Alan Becker
+                </p>
+            </div>
 
+            <p class="testimonials-eyebrow">Testimonials</p>
+
+            <div class="testimonials-outro-pattern">
+                <img src="assets/doublestar.png" alt="" class="divider-star">
+            </div>
+
+        </div>
     </div>
-
-
-    <div class="vip-content">
-
-        <p class="eyebrow">
-            VIP DINERS
-        </p>
-
-        <h2>
-            Own exclusive entry
-            <em>to paradise.</em>
-        </h2>
-
-        <p>
-            Enjoy lifetime VIP perks, unlimited access
-            to state-of-the-art lounge areas and extra
-            special dishes from top-rated chefs.
-            Make every meal extra special.
-        </p>
-
-        <a href="vip.php"
-           class="gold-button">
-
-            Be a VIP
-
-        </a>
-
-    </div>
-
 </section>
-
-
-
-<!-- =====================================================
-     TESTIMONIALS
-===================================================== -->
-
-<section class="testimonial-section section-padding">
-
-    <div class="section-heading centered">
-
-        <p class="eyebrow dark">
-            TESTIMONIALS
-        </p>
-
-        <h2>
-            Loved beyond
-            <em>expectation.</em>
-        </h2>
-
-    </div>
-
-
-    <div class="testimonial-grid">
-
-
-        <article class="testimonial">
-
-            <div class="quote-mark">
-                “
-            </div>
-
-            <p>
-                Absolutely delightful.
-                Finest of all time.
-                Everybody who can, must try.
-            </p>
-
-            <span>
-                — Saransh Agrawal
-            </span>
-
-        </article>
-
-
-        <article class="testimonial">
-
-            <div class="quote-mark">
-                “
-            </div>
-
-            <p>
-                Absolutely delightful.
-                Finest of all time.
-                Everybody who can, must try.
-            </p>
-
-            <span>
-                — Saransh Agrawal
-            </span>
-
-        </article>
-
-
-        <article class="testimonial">
-
-            <div class="quote-mark">
-                “
-            </div>
-
-            <p>
-                Absolutely delightful.
-                Finest of all time.
-                Everybody who can, must try.
-            </p>
-
-            <span>
-                — Alan Becker
-            </span>
-
-        </article>
-
-    </div>
-
-</section>
-
 
 <!-- =====================================================
      CONTACT SECTION

@@ -357,7 +357,7 @@
                 EUROPEAN
             </button>
 
-            <button class="category-button" data-category="european">
+            <button class="category-button" data-category="australian">
                 AUSTRALIAN
             </button>
 
@@ -644,8 +644,6 @@
                 <span class="menu-tag">
                     <span class="menu-tag-icon"><img src="assets/vegetarian.png" alt=""></span>
                     VEGETARIAN
-                </span>
-
                 </span>
 
             </div>

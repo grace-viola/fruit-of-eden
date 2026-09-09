@@ -798,7 +798,7 @@
                 </p>
             </div>
 
-            <p class="testimonials-eyebrow">Testimonials</p>
+            <p class="testimonials-eyebrow">TESTIMONIALS</p>
 
             <div class="testimonials-outro-pattern">
                 <img src="assets/doublestar.png" alt="" class="divider-star">

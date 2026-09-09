@@ -33,3 +33,68 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
+    /* =====================================================
+        MENU CATEGORY FILTER
+        ===================================================== */
+
+        const categoryButtons =
+            document.querySelectorAll(".category-button");
+
+        const menuCards =
+            document.querySelectorAll(".menu-card");
+
+
+        categoryButtons.forEach(function (button) {
+
+            button.addEventListener("click", function () {
+
+                const selectedCategory =
+                    button.getAttribute("data-category");
+
+
+                /* Remove active state from all buttons */
+
+                categoryButtons.forEach(function (item) {
+
+                    item.classList.remove("active");
+
+                });
+
+
+                /* Activate clicked button */
+
+                button.classList.add("active");
+
+
+                /* Filter dishes */
+
+                menuCards.forEach(function (card) {
+
+                    const cardCategory =
+                        card.getAttribute("data-category");
+
+
+                    if (
+                        selectedCategory === "all" ||
+                        cardCategory === selectedCategory
+                    ) {
+
+                        card.classList.remove("hidden");
+
+                    } else {
+
+                        card.classList.add("hidden");
+
+                    }
+
+                });
+
+
+                /* Re-apply search after category change */
+
+                filterMenu();
+
+            });
+
+        });
+
